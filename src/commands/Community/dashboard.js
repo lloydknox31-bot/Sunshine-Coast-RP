@@ -10,7 +10,7 @@ export default {
 
   data: new SlashCommandBuilder()
     .setName('dashboard')
-    .setDescription(''),
+    .setDescription(),
 
   async execute(interaction) {
     const embed = new EmbedBuilder()
