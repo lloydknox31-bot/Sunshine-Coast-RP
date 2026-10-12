@@ -29,9 +29,7 @@ async execute(interaction) {
   '• Realistic Australian roleplay\n' +
   '• Emergency services departments\n' +
   '• Organised roleplay sessions\n\n' +
-  '📋 Use the dropdown menu below to explore our server!'
-);
-  break;
+'📋 Use the dropdown menu below to explore our server!\n\n' +
   '🔗 **IMPORTANT LINKS**\n' +
   '[Staff Application](https://example.com)\n' +
   '[Department Applications](https://example.com)\n' +
