@@ -36,14 +36,11 @@ async execute(interaction) {
   '🎮 Sessions: <#1558799565774258206>\n' +
   '🚔 Departments: <#1558667839888466944>\n' +
   '🎫 Support: <#1558666954707837020>'
-)
+);
 
-          );
         break;
 
       case 'rules':
-        embed
-         
 
 const rules = [
   {
