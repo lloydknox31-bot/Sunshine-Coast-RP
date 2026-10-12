@@ -18,7 +18,7 @@ export default {
       .setTitle('🌊 Sunshine Coast Roleplay | Dashboard')
       .setDescription(
         '**Welcome to Sunshine Coast Roleplay!**\n' +
-        'Welcome to Sunshine Coast Roleplay, We are the newest Australian Roleplay and were founded by SWAMPSNAKE749 on the 11th of October 2026. We offer many different immersive roleplays. You can find all info mation below.\n\n' +
+        'Welcome to Sunshine Coast Roleplay, We are the newest Australian Roleplay and were founded by SWAMPSNAKE749 on the 11th of October 2026. We offer many different immersive roleplays. You can find all infomation below.\n\n' +
         '🔗 **IMPORTANT LINKS**\n' +
         '[Staff Application](https://example.com)\n' +
         '[Department Applications](https://example.com)\n' +
