@@ -39,7 +39,7 @@ async execute(interaction) {
   '📢 Announcements: <#1558667696030089217>\n' +
   '🚨 Server Updates: <#1558667358430564434>\n' +
   '🎮 Sessions: <#1558799565774258206>\n' +
-  '🚔 Departments: <#1558667839888466944>\n' +
+  '🚔 Departments: <#1558667783988846694>\n' +
   '🎫 Support: <#1558666954707837020>'
 );
 
