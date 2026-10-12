@@ -210,8 +210,10 @@ module.exports = { createRulesEmbeds };
         return;
     }
 
-    await interaction.update({
-      embeds: [embed]
+
+await interaction.editReply({
+  embeds: [embed]
+});
     });
   }
 };
