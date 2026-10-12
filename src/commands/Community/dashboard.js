@@ -10,7 +10,7 @@ export default {
 
   data: new SlashCommandBuilder()
     .setName('dashboard')
-    .setDescription('Display the Sunshine Coast Roleplay dashboard'),
+    .setDescription('Welcome to Sunshine Coast Roleplay, We are the newest Australian Roleplay and were founded by SWAMPSNAKE749 on the 11th of October 2026. We offer many different immersive roleplays. You can find all info mation below.'),
 
   async execute(interaction) {
     const embed = new EmbedBuilder()
