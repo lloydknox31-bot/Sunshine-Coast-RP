@@ -22,9 +22,15 @@ async execute(interaction) {
         embed
           .setTitle('🌊 Sunshine Coast Roleplay | Dashboard')
          
-.setDescription(
-  '**Welcome to Sunshine Coast Roleplay!**\n' +
-  'Welcome to Sunshine Coast Roleplay, We are the newest Australian Roleplay and were founded by SWAMPSNAKE749 on the 11th of October 2026. We offer many different immersive roleplays. You can find all info mation below.\n\n' +
+    .setDescription(
+  '**🌴 Welcome to Sunshine Coast Roleplay!**\n\n' +
+  'Welcome to Sunshine Coast Roleplay, an Australian ER:LC roleplay community founded by SWAMPSNAKE749 on the 11th of October 2026.\n\n' +
+  '🚨 **What We Offer**\n' +
+  '• Realistic Australian roleplay\n' +
+  '• Emergency services departments\n' +
+  '• Organised roleplay sessions\n\n' +
+  '📋 Use the dropdown menu below to explore our server!'
+)\n\n' +
   '🔗 **IMPORTANT LINKS**\n' +
   '[Staff Application](https://example.com)\n' +
   '[Department Applications](https://example.com)\n' +
