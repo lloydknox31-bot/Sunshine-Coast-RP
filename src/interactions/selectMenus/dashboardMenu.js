@@ -44,7 +44,6 @@ async execute(interaction) {
       case 'rules':
         embed
          
-const { EmbedBuilder } = require('discord.js');
 
 const rules = [
   {
@@ -164,17 +163,15 @@ const rules = [
   }
 ];
 
-function createRulesEmbeds() {
-  return rules.map((section) =>
-    new EmbedBuilder()
-      .setColor(0x1685D3)
-      .setTitle(section.title)
-      .setDescription(section.text.join('\n'))
-      .setFooter({ text: 'Sunshine Coast Roleplay | ER:LC' })
-  );
-}
+const rulesText = rules
+  .map(section =>
+    `**${section.title}**\n${section.text.join('\n')}`
+  )
+  .join('\n\n');
 
-module.exports = { createRulesEmbeds };
+embed
+  .setTitle('📜 Sunshine Coast Roleplay | Server Rules')
+  .setDescription(rulesText.slice(0, 4096));
 
         break;
 
