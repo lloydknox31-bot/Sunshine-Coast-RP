@@ -30,7 +30,7 @@ export default {
 '🚨 Server Updates: <#1558667358430564434>\n' +
 '🎮 Sessions: <#1558799565774258206>\n' +
 '🚔 Departments: <#1558667783988846694>\n' +
-'🎫 Support: <#1558666954707837020>'
+'🎫 Support: <#1558666954707837020>' +
 
       )
       .setFooter({
