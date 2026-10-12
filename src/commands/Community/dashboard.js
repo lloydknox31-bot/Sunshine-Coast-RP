@@ -29,7 +29,7 @@ export default {
         '[Staff Application](https://example.com)\n' +
         '[Department Applications](https://example.com)\n' +
         '[Ban Appeals](https://example.com)\n' +
-        '[Roblox Group](https://www.roblox.com/communities/configure?id=15251556#!)\n\n' +
+        '[Roblox Group](https://www.roblox.com/communities/15251556/Sunshine-Coast-Roleplay-ERLC#!/about)\n\n' +
 '💻 **IMPORTANT CHANNELS**\n' +
 '📢 Announcements: <#1558667696030089217>\n' +
 '🚨 Server Updates: <#1558667358430564434>\n' +
