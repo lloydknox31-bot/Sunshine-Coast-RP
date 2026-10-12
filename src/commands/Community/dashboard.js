@@ -76,10 +76,15 @@ export default {
     const row = new ActionRowBuilder()
       .addComponents(menu);
 
-    await interaction.reply({
-      embeds: [embed],
-      components: [row]
-    });
+ await interaction.channel.send({
+  embeds: [embed],
+  components: [row]
+});
+
+await interaction.reply({
+  content: '✅ Dashboard posted successfully!',
+  flags: 64
+});
   }
 };
 // Sunshine Coast Roleplay Dashboard
