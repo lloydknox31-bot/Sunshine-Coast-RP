@@ -17,10 +17,23 @@ export default {
       case 'dashboard':
         embed
           .setTitle('🌊 Sunshine Coast Roleplay | Dashboard')
-          .setDescription(
-            '**Welcome to Sunshine Coast Roleplay!**\n\n' +
-            'Your home for Australian ER:LC roleplay.\n\n' +
-            'Use the dropdown to explore our server.'
+         
+.setDescription(
+  '**Welcome to Sunshine Coast Roleplay!**\n' +
+  'Your home for Australian emergency services roleplay in ER:LC.\n\n' +
+  '🔗 **IMPORTANT LINKS**\n' +
+  '[Staff Application](https://example.com)\n' +
+  '[Department Applications](https://example.com)\n' +
+  '[Ban Appeals](https://example.com)\n' +
+  '[Roblox Group](https://www.roblox.com/)\n\n' +
+  '💻 **IMPORTANT CHANNELS**\n' +
+  '📢 Announcements: <#1558667696030089217>\n' +
+  '🚨 Server Updates: <#1558667358430564434>\n' +
+  '🎮 Sessions: <#1558799565774258206>\n' +
+  '🚔 Departments: <#1558667839888466944>\n' +
+  '🎫 Support: <#1558666954707837020>'
+)
+
           );
         break;
 
