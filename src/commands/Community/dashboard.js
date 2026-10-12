@@ -38,8 +38,12 @@ export default {
 '🎫 Support: <#1558666954707837020>'
 
       )
-      .setFooter({
-        text: 'Sunshine Coast Roleplay • Australian Roleplay'
+      )
+.setImage('https://cdn.discordapp.com/attachments/1559177088043327509/1559177151595544648/Sunshine_Coast_Roleplay_Dashboard_1.png?ex=6ace2061&is=6acccee1&hm=ff30b4f5d9d296b571ca0e90ddf8bcf1bcbb27595d4bbeac9b96e825ba9dba9f&')
+.setFooter({
+  text: 'Sunshine Coast Roleplay • Australian Roleplay'
+})
+.setTimestamp();
       })
       .setTimestamp();
 
