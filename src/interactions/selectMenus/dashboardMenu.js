@@ -202,18 +202,17 @@ module.exports = { createRulesEmbeds };
           );
         break;
 
+
       default:
-        await interaction.reply({
+        await interaction.followUp({
           content: 'Unknown dashboard option.',
           ephemeral: true
         });
         return;
     }
 
-
-await interaction.editReply({
-  embeds: [embed]
-});
+    await interaction.editReply({
+      embeds: [embed]
     });
   }
 };
