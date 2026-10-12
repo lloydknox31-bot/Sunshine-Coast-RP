@@ -203,7 +203,7 @@ module.exports = { createRulesEmbeds };
         break;
 
 
-      default:
+         default:
         await interaction.followUp({
           content: 'Unknown dashboard option.',
           ephemeral: true
