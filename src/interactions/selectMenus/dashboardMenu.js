@@ -31,6 +31,7 @@ async execute(interaction) {
   '• Organised roleplay sessions\n\n' +
   '📋 Use the dropdown menu below to explore our server!'
 );
+  break;
   '🔗 **IMPORTANT LINKS**\n' +
   '[Staff Application](https://example.com)\n' +
   '[Department Applications](https://example.com)\n' +
