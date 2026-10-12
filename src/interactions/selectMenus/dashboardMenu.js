@@ -4,8 +4,12 @@ import { EmbedBuilder } from 'discord.js';
 export default {
   name: 'scrp_dashboard_menu',
 
-  async execute(interaction) {
-    const selected = interaction.values[0];
+
+async execute(interaction) {
+  await interaction.deferUpdate();
+
+  const selected = interaction.values[0];
+
 
     const embed = new EmbedBuilder()
       .setColor(0x245BFF)
