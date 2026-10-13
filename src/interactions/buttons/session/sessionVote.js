@@ -76,11 +76,18 @@ async function handleVote(interaction, choice) {
       .setStyle(ButtonStyle.Danger)
   );
 
-  await interaction.message.edit({
-    embeds: [embed],
-    components: [row]
-  });
+  if (yesCount >= REQUIRED_VOTES) {
+  await interaction.message.delete();
 
+  return interaction.editReply({
+    content: '✅ The session vote reached 15 YES votes and has been automatically removed.'
+  });
+}
+
+await interaction.message.edit({
+  embeds: [embed],
+  components: [row]
+});
   await interaction.editReply({
     content: `✅ Your ${choice.toUpperCase()} vote has been recorded.`
   });
