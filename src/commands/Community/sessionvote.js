@@ -69,10 +69,14 @@ export default {
           .setStyle(ButtonStyle.Danger)
       );
 
-      await channel.send({
-        embeds: [embed],
-        components: [row]
-      });
+    await channel.send({
+  content: '@everyone',
+  embeds: [embed],
+  components: [row],
+  allowedMentions: {
+    parse: ['everyone']
+  }
+});
 
       await interaction.editReply({
         content: `✅ Session vote posted successfully in ${channel}.`
