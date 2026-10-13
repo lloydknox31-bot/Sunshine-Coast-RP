@@ -113,7 +113,9 @@ if (yesCount >= REQUIRED_VOTES) {
   await new Promise(resolve => setTimeout(resolve, 30000));
 
   const channel = interaction.channel;
-
+const bannerEmbed = new EmbedBuilder()
+  .setColor(0x168BFF)
+  .setImage('https://cdn.discordapp.com/attachments/1559177088043327509/1559511569426284674/Sunshine_Coast_Roleplay_Session_Startup.png?ex=6acf57d4&is=6ace0654&hm=e4d096062ea15ad419ab509c9779d72fcbb01ec6ac4b83800a356d8d901cec79&');
   const startupEmbed = new EmbedBuilder()
     .setColor(0x168BFF)
     .setTitle('🚨 Sunshine Coast Roleplay | Session Startup')
@@ -136,7 +138,7 @@ if (yesCount >= REQUIRED_VOTES) {
 
   await channel.send({
     content: '@everyone',
-    embeds: [startupEmbed],
+    embeds: [bannerEmbed, startupEmbed],
     allowedMentions: {
       parse: ['everyone']
     }
