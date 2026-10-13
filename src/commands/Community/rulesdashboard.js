@@ -44,3 +44,18 @@ export default {
     emoji: '🌐'
   }
 );
+
+    const row = new ActionRowBuilder()
+      .addComponents(menu);
+
+    await interaction.channel.send({
+      embeds: [embed],
+      components: [row]
+    });
+
+    await interaction.reply({
+      content: '✅ Rules Dashboard posted successfully!',
+      flags: 64
+    });
+  }
+};
