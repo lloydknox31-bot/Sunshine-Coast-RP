@@ -123,8 +123,11 @@ if (yesCount >= REQUIRED_VOTES) {
       '**Server Code:** `ssc`\n' +
       `**Host:** <@${interaction.user.id}>\n` +
       `**Started:** <t:${Math.floor(Date.now() / 1000)}:R>\n\n` +
-      'Please read our rules before joining.\n\n' +
-      '**Have a great RP!**'
+     'Please read our rules before joining.\n\n' +
+'⚠️ **IMPORTANT NOTICE**\n' +
+'If you voted, you must join the session within **15 minutes** ' +
+'or face moderation action.\n\n' +
+'**Have a great RP!**'
     )
     .setFooter({
       text: 'Sunshine Coast Roleplay • Session Management'
