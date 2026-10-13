@@ -123,7 +123,7 @@ const bannerEmbed = new EmbedBuilder()
       '**Our roleplay session is now starting!**\n\n' +
       '**Server:** Sunshine Coast Roleplay\n' +
       '**Server Code:** `ssc`\n' +
-      `**Host:** <@${interaction.user.id}>\n` +
+   `**Host:** ${interaction.message.embeds[0].description.match(/\*\*Session Host:\*\* <@!?(\d+)>/)?.[1] ? `<@${interaction.message.embeds[0].description.match(/\*\*Session Host:\*\* <@!?(\d+)>/)[1]}>` : 'Unknown'}\n` +
       `**Started:** <t:${Math.floor(Date.now() / 1000)}:R>\n\n` +
      'Please read our rules before joining.\n\n' +
 '⚠️ **IMPORTANT NOTICE**\n' +
