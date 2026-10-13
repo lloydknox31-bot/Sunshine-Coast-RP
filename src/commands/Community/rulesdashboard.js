@@ -19,7 +19,7 @@ export default {
       .setTitle('📜 Sunshine Coast Roleplay | Rules')
       .setDescription(
         '**Welcome to the Rules Dashboard!**\n\n' +
-        'Please read and follow all Sunshine Coast Roleplay rules.\n\n' +
+        'Please read and follow all Sunshine Coast Roleplay rules or face moderation.\n\n' +
         '📋 **RULE CATEGORIES**\n' +
         'Select a category from the dropdown below to view its rules.'
       )
