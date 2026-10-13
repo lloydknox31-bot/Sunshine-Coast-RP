@@ -29,75 +29,18 @@ export default {
 
     const menu = new StringSelectMenuBuilder()
       .setCustomId('scrp_rules_menu')
-      .setPlaceholder('Select a rule category...')
+      .setPlaceholder('dashboard')
       .addOptions(
-        {
-          label: 'General Rules',
-          value: 'general',
-          emoji: '📋'
-        },
-        {
-          label: 'Roleplay Rules',
-          value: 'roleplay',
-          emoji: '🎭'
-        },
-        {
-          label: 'Civilian Rules',
-          value: 'civilian',
-          emoji: '🚗'
-        },
-        {
-          label: 'Police Rules',
-          value: 'police',
-          emoji: '🚓'
-        },
-        {
-          label: 'Fire & Rescue Rules',
-          value: 'fire',
-          emoji: '🚒'
-        },
-        {
-          label: 'Ambulance Rules',
-          value: 'ambulance',
-          emoji: '🚑'
-        },
-        {
-          label: 'Traffic Rules',
-          value: 'traffic',
-          emoji: '🚦'
-        },
-        {
-          label: 'Radio Rules',
-          value: 'radio',
-          emoji: '📻'
-        },
-        {
-          label: 'Staff Rules',
-          value: 'staff',
-          emoji: '🛡️'
-        },
-        {
-          label: 'Punishments',
-          value: 'punishments',
-          emoji: '⚠️'
-        }
-      );
-
-    const row = new ActionRowBuilder()
-      .addComponents(menu);
-
-    await interaction.reply({
-      content: '📜 Posting the rules dashboard...',
-      flags: 64
-    });
-
-    await interaction.channel.send({
-      embeds: [embed],
-      components: [row]
-    });
-
-    await interaction.editReply({
-      content: '✅ Rules dashboard posted successfully!'
-    });
+  {
+    label: 'Discord Rules',
+    description: 'View our Discord community rules',
+    value: 'discord',
+    emoji: '💬'
+  },
+  {
+    label: 'Game Rules',
+    description: 'View our ER:LC roleplay rules',
+    value: 'game',
+    emoji: '🌐'
   }
-};
+);
