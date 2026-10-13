@@ -49,7 +49,9 @@ export default {
       if (startupMessage) {
         await startupMessage.delete();
       }
-
+const bannerEmbed = new EmbedBuilder()
+  .setColor(0x168BFF)
+  .setImage('https://cdn.discordapp.com/attachments/1559177088043327509/1559515316273283112/Sunshine_Coast_Roleplay_Session_Ended.png?ex=6acf5b51&is=6ace09d1&hm=1e2c6c1e86d974ed25637fd4f4e668a2b7598caf51fc11e4249f235e44758eeb&');
       const endEmbed = new EmbedBuilder()
         .setColor(0x168BFF)
         .setTitle('🛑 Sunshine Coast Roleplay | Session Ended')
@@ -68,7 +70,7 @@ export default {
 
       await channel.send({
         content: '@everyone',
-        embeds: [endEmbed],
+       embeds: [bannerEmbed, endEmbed],
         allowedMentions: {
           parse: ['everyone']
         }
