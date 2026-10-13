@@ -26,7 +26,7 @@ export default {
 '📋 Use the dropdown menu below to explore our server!' +
 '\n\n' +
         '🔗 **IMPORTANT LINKS**\n' +
-        '[Staff Application](https://example.com)\n' +
+        '[Staff Application](https://melonly.xyz/dashboard/7514863869194407936/applications/7515395088436957184)\n' +
         '[Department Applications](https://example.com)\n' +
         '[Ban Appeals](https://example.com)\n' +
         '[Roblox Group](https://www.roblox.com/communities/15251556/Sunshine-Coast-Roleplay-ERLC#!/about)\n\n' +
