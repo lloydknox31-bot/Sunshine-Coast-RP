@@ -124,7 +124,7 @@ const rules = [
   {
     title: '🚦 07 | TRAFFIC REGULATIONS',
     text: [
-      '**7.01** Drive on the left side of the road.',
+      '**7.01** Drive on the right side of the road.',
       '**7.02** Built-up areas: 50 km/h.',
       '**7.03** School zones: 40 km/h when active.',
       '**7.04** Major roads: 80 km/h unless signed.',
