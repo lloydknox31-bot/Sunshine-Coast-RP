@@ -8,7 +8,7 @@ import {
 const SESSIONS_CHANNEL_ID = '1558799565774258206';
 
 // Replace this with the direct Discord image link.
-const BANNER_URL = 'https://cdn.discordapp.com/attachments/1559177088043327509/1559519057584062484/Sunshine_Coast_Session_Hours_Banner.png?ex=6acf5ecd&is=6ace0d4d&hm=977fc4cd6d74f99a11ee26016f4b4e0fb7db90b3c3b00dd26547383481eae556&';
+const BANNER_URL = 'https://cdn.discordapp.com/attachments/1559177088043327509/1559519057584062484/Sunshine_Coast_Session_Hours_Banner.png';
 
 export default {
   slashOnly: true,
