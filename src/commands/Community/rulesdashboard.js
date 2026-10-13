@@ -23,9 +23,10 @@ export default {
         '📋 **RULE CATEGORIES**\n' +
         'Select a category from the dropdown below to view its rules.'
       )
-      .setFooter({
+           .setFooter({
         text: 'Sunshine Coast Roleplay • Rules & Regulations'
-      });
+      })
+      .setImage('https://cdn.discordapp.com/attachments/1559177088043327509/1559486607109791744/Sunshine_Coast_Roleplay_Rules_Banner.png?ex=6acf4094&is=6acdef14&hm=bf08a1b869338b5d92c00b87577c8e8f492709226731863ba4322410dad1131d&');
 
     const menu = new StringSelectMenuBuilder()
       .setCustomId('scrp_rules_menu')
