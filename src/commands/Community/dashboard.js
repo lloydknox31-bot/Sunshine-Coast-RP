@@ -10,9 +10,91 @@ export default {
 
   data: new SlashCommandBuilder()
     .setName('dashboard')
-   .setDescription('Sunshine Coast Roleplay dashboard'),
+ .setDescription('Post a Sunshine Coast Roleplay dashboard')
+.addStringOption(option =>
+  option
+    .setName('type')
+    .setDescription('Choose which dashboard to post')
+    .setRequired(false)
+    .addChoices(
+      { name: 'Welcome Dashboard', value: 'welcome' },
+      { name: 'Assistance Dashboard', value: 'assistance' }
+    )
+),
+  
 
   async execute(interaction) {
+    const dashboardType =
+  interaction.options.getString('type') || 'welcome';
+
+if (dashboardType === 'assistance') {
+  const supportChannelId = '1558666954707837020';
+
+  const supportChannel = await interaction.client.channels.fetch(
+    supportChannelId
+  );
+
+  if (!supportChannel?.isTextBased() || !supportChannel.send) {
+    return interaction.reply({
+      content: '❌ Assistance channel not found.',
+      flags: 64
+    });
+  }
+
+  const banner = new EmbedBuilder()
+    .setColor(0x245BFF)
+    .setImage(
+      'https://cdn.discordapp.com/attachments/1559177088043327509/1559860215543898182/Sunshine_Coast_Roleplay_Assistance.png?ex=6ad09c88&is=6acf4b08&hm=4e7e21c56accc5787287b5ea3bd8bf605b2ff08abbfb57788555cb5a6b40e279'
+    );
+
+  const assistance = new EmbedBuilder()
+    .setColor(0x245BFF)
+    .setDescription(
+      'Welcome to the **Sunshine Coast Roleplay Assistance Centre**.\n\n' +
+      'Please be advised that submitting tickets for trivial matters ' +
+      'or enquiries already addressed in our FAQs may result in ' +
+      'moderation action.\n\n' +
+
+      '━━━━━━━━━━━━━━━━━━━━\n\n' +
+
+      '☎️ **GENERAL SUPPORT**\n' +
+      '• General Enquiries\n' +
+      '• Member Reports\n' +
+      '• Partnerships\n\n' +
+
+      '━━━━━━━━━━━━━━━━━━━━\n\n' +
+
+      '⚖️ **INTERNAL AFFAIRS**\n' +
+      '• Staff Reports\n' +
+      '• Staff Conduct Concerns\n' +
+      '• Staff Rewards\n\n' +
+
+      '━━━━━━━━━━━━━━━━━━━━\n\n' +
+
+      '🚔 **DEPARTMENT SUPPORT**\n' +
+      '• Mafia Reports\n' +
+      '• Department Reports\n' +
+      '• Department Enquiries\n\n' +
+
+      '━━━━━━━━━━━━━━━━━━━━\n\n' +
+
+      '🎫 **OPENING A TICKET**\n' +
+      'Please use the **Tickets V2 dropdown below** to select ' +
+      'the appropriate support department.'
+    )
+    .setFooter({
+      text: 'Sunshine Coast Roleplay • Official Assistance Centre'
+    });
+
+  await supportChannel.send({
+    embeds: [banner, assistance]
+  });
+
+  return interaction.reply({
+    content: `✅ Assistance Dashboard posted in ${supportChannel}!`,
+    flags: 64
+  });
+}
     const embed = new EmbedBuilder()
       .setColor(0x245BFF)
       .setTitle('🌊 Sunshine Coast Roleplay | Dashboard')
